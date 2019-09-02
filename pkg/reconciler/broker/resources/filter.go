@@ -142,7 +142,7 @@ func MakeFilterService(b *eventingv1alpha1.Broker) *corev1.Service {
 					TargetPort: intstr.FromInt(8080),
 				},
 				{
-					Name: "metrics",
+					Name: "http-metrics",
 					Port: 9090,
 				},
 			},

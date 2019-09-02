@@ -943,7 +943,7 @@ func servicePorts(httpInternal int) []corev1.ServicePort {
 			Port:       80,
 			TargetPort: intstr.FromInt(httpInternal),
 		}, {
-			Name: "metrics",
+			Name: "http-metrics",
 			Port: 9090,
 		},
 	}
