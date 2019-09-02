@@ -24,7 +24,7 @@ import (
 )
 
 const (
-	PortName   = "http"
+	PortName   = "http-channel"
 	PortNumber = 80
 	// EventingChannelLabel carries the name of knative's label for the channel
 	EventingChannelLabel = "eventing.knative.dev/channel"

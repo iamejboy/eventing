@@ -114,12 +114,12 @@ func MakeFilterService(b *eventingv1alpha1.Broker) *corev1.Service {
 			Selector: FilterLabels(b.Name),
 			Ports: []corev1.ServicePort{
 				{
-					Name:       "http",
+					Name:       "http-filter",
 					Port:       80,
 					TargetPort: intstr.FromInt(8080),
 				},
 				{
-					Name: "metrics",
+					Name: "http-metrics",
 					Port: 9090,
 				},
 			},

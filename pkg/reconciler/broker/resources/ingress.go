@@ -124,12 +124,12 @@ func MakeIngressService(b *eventingv1alpha1.Broker) *corev1.Service {
 			Selector: IngressLabels(b.Name),
 			Ports: []corev1.ServicePort{
 				{
-					Name:       "http",
+					Name:       "http-ingress",
 					Port:       80,
 					TargetPort: intstr.FromInt(8080),
 				},
 				{
-					Name: "metrics",
+					Name: "http-metrics",
 					Port: 9090,
 				},
 			},
