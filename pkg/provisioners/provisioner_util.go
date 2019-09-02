@@ -78,6 +78,7 @@ func newDispatcherService(ccp *eventingv1alpha1.ClusterChannelProvisioner, opts 
 					// Refer to https://github.com/istio/istio/issues/13193 for more details.
 					// TODO: Uncomment Name:"http" when ISTIO fixes the issue
 					// Name:       "http",
+					Name:       "http-dispatcher",
 					Port:       80,
 					Protocol:   corev1.ProtocolTCP,
 					TargetPort: intstr.FromInt(8080),
