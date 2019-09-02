@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	PortName           = "http"
+	PortName           = "http-channel"
 	PortNumber         = 80
 	MessagingRoleLabel = "messaging.knative.dev/role"
 	MessagingRole      = "in-memory-channel"
